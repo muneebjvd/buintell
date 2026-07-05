@@ -6,10 +6,23 @@
   "scripts": {
     "lint": "eslint \"src/**/*.ts\"",
     "build": "tsc",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "db:migrate": "tsx src/migrations/run-migrations.ts",
+    "db:seed": "tsx src/seeds/run-seeds.ts",
+    "test": "vitest run"
   },
-  "dependencies": {},
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "drizzle-orm": "^0.45.2",
+    "postgres": "^3.4.9"
+  },
   "devDependencies": {
-    "typescript": "^5.3.3"
+    "@types/node": "^26.1.0",
+    "drizzle-kit": "^0.31.10",
+    "tsx": "^4.23.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.2"
   }
 }
