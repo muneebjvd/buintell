@@ -1,0 +1,73 @@
+/* Buintell UI Core Styles */
+@import '@buintell/design-system/tokens.css';
+
+.bu-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-medium);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.bu-button:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+.bu-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Base input */
+.bu-input {
+  display: flex;
+  width: 100%;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-bg-base);
+  color: var(--color-text-primary);
+  padding: var(--space-2) var(--space-3);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-sm);
+  transition: border-color var(--transition-fast);
+}
+.bu-input:focus {
+  outline: none;
+  border-color: var(--color-border-focus);
+  box-shadow: 0 0 0 1px var(--color-border-focus);
+}
+
+/* Card */
+.bu-card {
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-border-base);
+  background-color: var(--color-bg-base);
+  box-shadow: var(--shadow-sm);
+  color: var(--color-text-primary);
+}
+
+/* Badge */
+.bu-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--radius-full);
+  padding: 0 var(--space-2);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  height: 1.5rem;
+}
+
+/* Layout */
+.bu-stack {
+  display: flex;
+  flex-direction: column;
+}
+.bu-flex {
+  display: flex;
+}
+.bu-grid {
+  display: grid;
+}
