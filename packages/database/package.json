@@ -11,7 +11,8 @@
     "db:push": "drizzle-kit push",
     "db:migrate": "tsx src/migrations/run-migrations.ts",
     "db:seed": "tsx src/seeds/run-seeds.ts",
-    "test": "vitest run"
+    "test": "vitest run",
+    "db:benchmark": "tsx src/benchmarks/run.ts"
   },
   "dependencies": {
     "dotenv": "^17.4.2",
